@@ -1,0 +1,38 @@
+html .hoverwell:hover {
+  background-color: #52575c;
+  cursor: pointer; }
+html .dummyClass {
+  color: red; }
+html select, html textarea {
+  color: #52575c; }
+html .well-title {
+  margin-top: 0px; }
+html .session {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+html .votingWidget {
+  height: 64px;
+  padding: 7px; }
+html .votingButton {
+  padding-left: 6px;
+  cursor: pointer; }
+html .blue {
+  color: blue; }
+html .gridStyle {
+  border: 1px solid #d4d4d4;
+  width: 400px;
+  height: 300px; }
+html .green {
+  background-color: green;
+  color: white; }
+html .footer {
+  height: 100px; }
+
+body {
+  background-color: white; }
+  body .navbar-inverse {
+    background-color: #042331; }

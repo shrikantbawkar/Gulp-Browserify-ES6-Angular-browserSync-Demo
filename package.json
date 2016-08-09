@@ -1,7 +1,7 @@
 {
-  "name": "Gulp Browserify ES6 Angular Demo",
+  "name": "Gulp_Browserify_ES6_Angular",
   "version": "1.0.0",
-  "description": "Gulp Browserify ES6 Angular Demo",
+  "description": "Gulp_Browserify_ES6_Angular",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,9 @@
   "author": "shrikant bawkar",
   "license": "ISC",
   "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-sanitize": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
     "babelify": "^7.3.0",
@@ -17,9 +20,11 @@
     "exorcist": "^0.4.0",
     "gulp": "^3.9.1",
     "gulp-ng-annotate": "^2.0.0",
+    "gulp-ruby-sass": "^2.0.6",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.4",
     "gulp-util": "^3.0.7",
+    "run-sequence": "^1.2.2",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"

@@ -1,0 +1,38 @@
+<h2>This is service-callback Data</h2>
+<br>
+<div class="row">
+	<div class="span11"><h4>Name: {{event.name}}</h4></div>
+</div>
+<div class="row">
+	<div class="span11"><h4>Date: {{event.date}}</h4></div>
+	<div class="span5"><h4>Time: {{event.time}}</h4></div>
+	<div class="span5"><h4>Price: {{event.price | currency}}</h4></div>
+	<div class="span11">Duration: {{event.duration | durations}}</div>
+</div>
+<div class="row">
+	<div class="span5"><h4>Address: </h4><br>
+	City: {{event.city}}<br>
+	District: {{event.district}}<br>
+	State: {{event.state}} 
+	</div>
+</div>
+<hr />
+<br>
+SortBy: 
+<select ng-model="sortorder">
+	<option selected value="name">Name</option>
+	<option value="-star">Star</option>
+</select>
+
+<ul class="thumbnails">
+	<li ng-repeat="session in sessions | orderBy:sortorder" class="span11">
+		<div class="row">
+			<div class="well span10">
+				<h4>Framework name: {{session.name}}</h4><br>
+				<span>Complexity: {{session.complexity}}</span><br>
+				<span>Documentation: {{session.documentation}}</span><br>
+				<span>Star: {{session.star}}</span>
+			</div>
+		</div>
+	</li>
+</ul>

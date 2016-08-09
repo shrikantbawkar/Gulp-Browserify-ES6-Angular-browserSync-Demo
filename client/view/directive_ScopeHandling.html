@@ -1,0 +1,21 @@
+<h3>directive_ScopeHandling Page content here</h3><br><br>
+<h4>Using variable in scope : scope{event: "="} </h4>
+<ul>
+	<li ng-repeat="e in eventsObj">
+		<event-thumbnail my-event="e"></event-thumbnail>
+	</li>
+</ul>
+<hr />
+<h4>Using methode in scope : scope{event: "&"} </h4>
+<ul>
+	<li ng-repeat="e in eventsObj">
+		<event-Thumbnailmethod event-method="eventsObjMethod(e)" my-event="e"></event-Thumbnailmethod>
+	</li>
+</ul>
+<hr />
+<h4>Using expression in scope : scope{event: "@"} </h4>
+<ul>
+	<li ng-repeat="e in eventsObj">
+		<event-Thumbnailexpression my-expression="{{eventsObj}}"></event-Thumbnailexpression>
+	</li>
+</ul>
